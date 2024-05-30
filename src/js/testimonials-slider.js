@@ -1,6 +1,4 @@
 // core version + navigation, pagination modules:
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -24,6 +22,9 @@ const swiperParams = {
             slidesPerView: 3,
             spaceBetween: 32
         },
+    },
+    pagination: {
+        el: '.swiper-pagination',
     },
     on: {
         init() {
